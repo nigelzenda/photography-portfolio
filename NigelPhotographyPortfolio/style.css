@@ -1,26 +1,3 @@
-/*
-Theme Name: Julie Creative Portfolio
-Theme URI: https://templatesjungle.com/
-Author: TemplatesJungle
-Author URI: https://templatesjungle.com/
-Description: Julie Creative Portfolio is specially designed product packaged for designers portfolio websites.
-Version: 1.1
-*/
-
-/*--------------------------------------------------------------
-This is main CSS file that contains custom style rules used in this template
---------------------------------------------------------------*/
-
-/*------------------------------------*\
-    Table of contents
-\*------------------------------------*/
-/*------------------------------------------------
-CSS STRUCTURE:
-
-1. VARIABLES
-2. GENERAL TYPOGRAPHY
-
---------------------------------------------------------------*/
 :root,
 [data-bs-theme=light] {
   --heading-font: "Roboto", sans-serif;
@@ -72,7 +49,7 @@ CSS STRUCTURE:
 .container-xl,
 .container-xxl {
   /* spacing */
-  --bs-gutter-x: 2.5rem;
+  --bs-gutter-x: 1.5rem;
 }
 
 h1,
