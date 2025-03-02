@@ -178,12 +178,13 @@
     
     AOS.init({
       duration: 1200,
-      // once: true,
+      once: false,
     })
     
       });
     
-  // window scroll    
+  // window scroll
+
 
 
   // window load
