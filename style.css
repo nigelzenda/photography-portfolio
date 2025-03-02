@@ -858,3 +858,13 @@ img {
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
+
+#contact {
+  min-height: 100vh; /* Ensures the section takes up at least full viewport height */
+  position: relative;
+  z-index: 1; /* Keeps it above any background elements */
+}
+
+.bg-text:after {
+  pointer-events: none; /* Prevents the pseudo-element from interfering with layout */
+}
