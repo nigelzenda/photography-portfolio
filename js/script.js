@@ -169,19 +169,21 @@
     overlayMenu();
     initTextFx();
     initChocolat();
-
+    
     // mobile menu
     $('.menu-btn').click(function (e) {
       e.preventDefault();
       $('body').toggleClass('nav-active');
     });
-
+    
     AOS.init({
       duration: 1200,
       // once: true,
     })
-
-  });
+    
+      });
+    
+  // window scroll    
 
 
   // window load
