@@ -179,7 +179,7 @@
      // Parallax Effect
      $(window).on('scroll', function () {
       var scrollPos = $(window).scrollTop();
-      $('.parallax-bg').css('transform', 'translate3d(0, ' + scrollPos * -0.05 + 'px, 0)');
+      $('.parallax-bg').css('transform', 'translate3d(0, ' + scrollPos * -0.02 + 'px, 0)');
     });
 
     AOS.init({
