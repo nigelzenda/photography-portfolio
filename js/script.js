@@ -176,22 +176,28 @@
       $('body').toggleClass('nav-active');
     });
     
+     // Parallax Effect
+     $(window).on('scroll', function () {
+      var scrollPos = $(window).scrollTop();
+      $('.parallax-bg').css('transform', 'translate3d(0, ' + scrollPos * -0.05 + 'px, 0)');
+    });
+
     AOS.init({
       duration: 1200,
-      once: false,
-    })
-    
-      });
-    
-  // window scroll
+      offset: 300,
+      anchorPlacement: 'top-center',
+      once: false
+    });
+  });
 
-
-
-  // window load
   $(window).load(function () {
     $(".preloader").fadeOut("slow");
-    initIsotope();
-  })
-
+    initGalleryIsotope();
+    $(window).trigger('resize');
+    setTimeout(function() {
+      window.scrollTo(0, 0);
+      AOS.refreshHard();
+    }, 500);
+  });
 
 })(jQuery);
