@@ -64,6 +64,7 @@ main {
   z-index: 1;
 }
 
+
 .container,
 .container-fluid,
 .container-lg,
@@ -74,6 +75,9 @@ main {
   /* spacing */
   --bs-gutter-x: 1.5rem;
 }
+
+
+
 
 h1,
 h2,
@@ -197,6 +201,12 @@ p {
 .social-link.hover {
   color: var(--bs-gray);
   background-color: transparent;
+}
+/* header shadow */
+#header-nav {
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.01); /* Subtle shadow on the right */
+  background-color: #fff; /* Ensure background stays white */
+  z-index: 10; /* Keep it above other content */
 }
 
 /* breadcrumb */
@@ -419,6 +429,12 @@ header {
 @media (max-width: 991px) {
 
   /* mobile menu */
+  #header-nav {
+    box-shadow: none; /* Remove shadow on mobile when it slides in */
+  }
+  .nav-active #header-nav {
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.05); /* Restore shadow when active */
+  }
   header {
     transform: translate3d(-100%, 0, 0);
     transition: transform 0.3s ease-out;
@@ -462,7 +478,7 @@ img.portfolio-img {
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: transparent;
 }
 
 .item img {
